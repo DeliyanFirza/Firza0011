@@ -1,0 +1,72 @@
+body{
+    font-family: "Fira Sans", sans-serif;
+    background: bisque;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+
+}
+.header{
+    background: blueviolet;
+    height: 90px;
+}
+.nav{
+    
+    height:70px ;
+}
+.footer{
+    height:80px ;
+
+}
+.main{
+    
+    padding:10px;
+    text-align: center;
+    
+
+img {
+        
+    width: 200px; /* Lebar gambar 100% dari container */
+    height: auto; /* Biarkan tinggi menyesuaikan agar aspek ratio gambar tetap terjaga */
+    max-width: 500px; /* Batasi lebar maksimum gambar */
+    border-radius: 10px; /* Tambahkan sudut membulat pada gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada gambar */
+}}
+.waw{
+    display: flex;
+}
+
+.aside1{
+    
+img {
+        
+        width: 100%; /* Lebar gambar 100% dari container */
+        height: auto; /* Biarkan tinggi menyesuaikan agar aspek ratio gambar tetap terjaga */
+        max-width: 500px; /* Batasi lebar maksimum gambar */
+        border-radius: 10px; /* Tambahkan sudut membulat pada gambar */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada gambar */
+}}
+/* tampilan responsif */
+@media all and ( min-width :800px){
+    .main{
+        flex: 2 ;
+    }
+    .aside1{
+        order: 2 ;
+    }
+    .main{
+        order:1;
+    }
+    .footer{
+        order:4;
+    }}
+   
